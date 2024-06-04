@@ -17,3 +17,93 @@ _ **. Prompt Testing and Ranking Service: We evaluate and rank different prompts
 
 ## Steps in the project 
 
+# LLM Finetuning: Enabling Quality Embedding and Text Generation for Amharic, Swahili, and Yoruba Languages
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dataset](#dataset)
+- [Model Training and Fine-Tuning](#model-training-and-fine-tuning)
+- [Results](#results)
+- [Challenges](#challenges)
+- [Future Work](#future-work)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+## Introduction
+This project focuses on fine-tuning large language models (LLMs) to improve embedding quality and text generation capabilities for Amharic, Swahili, and Yoruba languages. The goal is to create models that better understand and generate text in these languages, which are underrepresented in current NLP research.
+
+## Project Overview
+The project includes the following components:
+- Data collection and preprocessing for Amharic, Swahili, and Yoruba.
+- Fine-tuning pre-trained language models on the collected data.
+- Evaluating the performance of the fine-tuned models.
+- Deploying the models for real-world applications.
+
+## Installation
+To set up the project environment, follow these steps:
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/your-repo-name.git
+    cd your-repo-name
+    ```
+
+2. Create a virtual environment using Python 3.10:
+    ```bash
+    python3.10 -m venv env
+    source env/bin/activate  # On Windows use `env\Scripts\activate`
+    ```
+
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+1. To fine-tune the model, run:
+    ```bash
+    python train.py --config configs/finetune_config.yaml
+    ```
+
+2. To generate text using the fine-tuned model, run:
+    ```bash
+    python generate.py --input "Your input text here"
+    ```
+
+## Dataset
+The dataset consists of text data in Amharic, Swahili, and Yoruba languages sourced from various online repositories and cleaned for training. The datasets are stored in the `data/` directory.
+
+## Model Training and Fine-Tuning
+The models are trained using the `train.py` script. Configuration files in the `configs/` directory define the training parameters and model architecture.
+
+## Results
+The performance of the models is evaluated based on:
+- Embedding quality
+- Text generation fluency
+- Contextual understanding
+
+Detailed results are documented in the `results/` directory.
+
+## Challenges
+- Scarcity of quality data for underrepresented languages.
+- Computational resource limitations for training large models.
+- Ensuring ethical use and bias mitigation in language models.
+
+## Future Work
+- Expand the dataset to include more diverse sources.
+- Experiment with different model architectures.
+- Improve deployment pipelines for real-time applications.
+
+## Contributing
+We welcome contributions! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to contribute to this project.
+
+## License
+This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgements
+We would like to thank 10 Academy for the support and resources provided to make this project possible. Special thanks to our mentors and the open-source community.
+
