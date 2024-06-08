@@ -36,6 +36,19 @@ To set up the project environment, follow these steps:
     pip install -r requirements.txt
     ``
 
+2. Setup environment variables on `.env`:
+
+(create .env file in the [Title](Makefile)root directory)
+
+```bash
+#################
+# Development env
+#################
+
+OPENAI_API_KEY=""
+VECTORDB_MODEL="gpt-3.5-turbo"
+```
+
 ## Contributors
 Bethelhem Mebratu
 
